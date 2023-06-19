@@ -1,0 +1,7 @@
+.company-thumbnail {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: -36px;
+    border-radius: 15px;
+}
