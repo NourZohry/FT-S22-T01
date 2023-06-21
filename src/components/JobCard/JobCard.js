@@ -6,6 +6,7 @@ export const JobCard = ({ cardData }) => {
   const data = cardData;
 
   return (
+    // <Box sx={{backgroundColor: "red"}}>test</Box>
     <Box sx={{ height: "100%", backgroundColor: "secondary.main", borderRadius: "6px", minWidth: " 20vw", width: "100%" }}>
       <CardContent sx={{ height: "100%" }}>
         {cardData.thumbnail && <img

@@ -6,13 +6,14 @@ import { Box, Switch } from "@mui/material";
 import "./Navbar.css"
 import { NavbarSwitch } from "../NavbarSwitch/NavbarSwitch";
 
-export const Navbar = ({setTheme, theme}) => {
+export const Navbar = ({setTheme, theme, setChosenJob}) => {
   return (
     <>
       <Box
         sx={{ height: "100%", width: "80%", mx: "auto", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}
       >
         <img
+        onClick={() => setChosenJob("")}
           src={DevJobs}
           alt="DevJobs"
         />

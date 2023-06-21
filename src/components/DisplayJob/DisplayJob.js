@@ -34,10 +34,10 @@ export const DisplayJob = ({ chosenJob }) => {
           </Box>
           <Button
             variant="contained"
-            sx={{ textTransform: "capitalize", boxShadow: "0", width: "130px", height: "45px", color: "primary.main", fontWeight: "bold" }}
-            style={{
-              backgroundColor: "#ebecf2",
-            }}
+            sx={{ textTransform: "capitalize", boxShadow: "0", width: "130px", height: "45px", color: "buttontest.col", fontWeight: "bold", backgroundColor: "buttontest.bg", '&:hover': {
+              backgroundColor: "buttontest.hov",
+              boxShadow: "0"
+            } }}
           >
             Company Site
           </Button>
@@ -63,7 +63,10 @@ export const DisplayJob = ({ chosenJob }) => {
             </Box>
             <Button
               variant="contained"
-              sx={{ textTransform: "capitalize", boxShadow: "0", fontWeight: "bold", width: "130px", height: "45px" }}
+              sx={{ textTransform: "capitalize", boxShadow: "0", fontWeight: "bold", width: "130px", height: "45px", '&:hover': {
+                backgroundColor: "primary.lightviolet",
+                boxShadow: "0"
+              } }}
             >
               Apply Now
             </Button>
@@ -82,7 +85,7 @@ export const DisplayJob = ({ chosenJob }) => {
                   {job_highlight.title}
                 </Typography>
                 {job_highlight.items.map((item) => {
-                  return <Typography my={1} color="secondary.darkgrey"><Typography display="inline" fontWeight="bold" mr={2} color="primary.main">•</Typography> {item}</Typography>;
+                  return <Typography my={1} color="secondary.darkgrey"><span display="inline" fontWeight="bold" mr={2} color="primary.main">•</span> {item}</Typography>;
                 })}
               </>
             );
@@ -102,7 +105,10 @@ export const DisplayJob = ({ chosenJob }) => {
           </Box>
           <Button
             variant="contained"
-            sx={{ textTransform: "capitalize", boxShadow: "0", fontWeight: "bold", width: "130px", height: "45px" }}
+            sx={{ textTransform: "capitalize", boxShadow: "0", fontWeight: "bold", width: "130px", height: "45px", '&:hover': {
+              backgroundColor: "primary.lightviolet",
+              boxShadow: "0"
+            } }}
           >
             Apply Now
           </Button>
